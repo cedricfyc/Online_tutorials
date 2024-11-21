@@ -48,6 +48,25 @@ Decide on the proper model to go forward with training based on previous steps' 
 ### 2.1 Supervised Learning <a name="chap2.1"></a>
 ### 2.2 Unsupervised Learning <a name="chap2.2"></a>
 ### 2.3 Summary <a name="chap2.3"></a>
+| Model                          | Type            | Best Use Case                                    | Why Choose                           | Limitations                               |
+|--------------------------------|-----------------|-------------------------------------------------|--------------------------------------|-------------------------------------------|
+| Linear Regression              | Supervised      | Predict continuous values                       | Simple, interpretable                | Poor for non-linear patterns              |
+| Logistic Regression            | Supervised      | Binary classification                           | Fast, interpretable                  | Assumes linear boundary                   |
+| SVM                            | Supervised      | Clear margin classification                     | Works in high dimensions             | Computationally expensive                 |
+| Decision Trees                 | Supervised      | General-purpose                                 | Easy to interpret                    | Overfitting                               |
+| Random Forests                 | Supervised      | Ensemble learning                               | Robust, reduces overfitting          | Less interpretable                        |
+| Gradient Boosting Machines     | Supervised      | Competitions                                    | Powerful                             | Computationally expensive                 |
+| K-Nearest Neighbors            | Supervised      | Simple classification                           | Non-parametric, no training needed   | Sensitive to noise                        |
+| Neural Networks                | Supervised      | Complex tasks                                   | High flexibility                     | Resource-intensive                        |
+| Naive Bayes                    | Supervised      | Text classification                             | Fast                                 | Assumes feature independence              |
+| LDA                            | Supervised      | Class discrimination                            | Reduces dimensionality               | Assumes normal distribution               |
+| K-Means Clustering             | Unsupervised    | Grouping, anomaly detection                     | Simple                               | Sensitive to outliers                     |
+| Hierarchical Clustering        | Unsupervised    | Taxonomy                                        | Builds cluster hierarchy             | Expensive for large datasets              |
+| PCA                            | Unsupervised    | Dimensionality reduction                        | Preserves variance                   | Assumes linear relationships              |
+| GMM                            | Unsupervised    | Soft clustering                                 | Handles overlapping clusters         | Prone to overfitting                      |
+| Autoencoders                   | Unsupervised    | Anomaly detection                               | Learns non-linear representations    | Resource-intensive                        |
+
+
 
 ## 3 Cheatsheet <a name="chap3"></a>
 
