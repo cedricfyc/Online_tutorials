@@ -18,7 +18,6 @@ Load in data
 - pandas
 - numpy
 
-
 2. Data Cleaning and Preprocessing
 Make it easier for the algorithm to process the data by **'chewing'** it for the ML algorithm
 - Adresses missing values, outliers, inconsistencies, etc. in the data

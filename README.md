@@ -11,7 +11,7 @@ This will be a comprehensive list of online tutorials that I have implemented. T
 
 4. [Rainfall Prediction – LogisticRegression, SVC, XGBClassifier](https://www.geeksforgeeks.org/rainfall-prediction-using-machine-learning-python/)
 
-5. [Microsoft Stock Prediction – Machine Learning](https://www.geeksforgeeks.org/microsoft-stock-price-prediction-with-machine-learning/)
+5. [Stock Prediction – Tensorflow](https://www.geeksforgeeks.org/stock-price-prediction-project-using-tensorflow/)
 
 
 # ROS1 Projects
