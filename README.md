@@ -42,6 +42,8 @@ This will be a comprehensive list of online tutorials that I have implemented. T
 
 - #### [Basic Motion Detection and Tracking](https://youtu.be/MkcUgPhOlP8?si=rN8VI8zjTM6MNI7h)
 
+- #### [Colour Detection](https://henrydangprg.com/2016/06/26/color-detection-in-python-with-opencv/)
+
 ### Not yet implemented <a name="chap1.10"></a>
 - #### [Basic Motion Detection and Tracking](https://pyimagesearch.com/2015/05/25/basic-motion-detection-and-tracking-with-python-and-opencv/)
 
@@ -66,6 +68,7 @@ This will be a comprehensive list of online tutorials that I have implemented. T
 - #### [Rosbag to Dataframe Conversion](https://pypi.org/project/rosbag-to-dataframe/)
 
 ### Not yet implemented <a name="chap2.10"></a>
+- #### [rosbags-dataframe 0.10.0](https://pypi.org/project/rosbags-dataframe/)  OR [rosbag-to-dataframe 0.2.1](https://pypi.org/project/rosbag-to-dataframe/)
 
 ---
 
