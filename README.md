@@ -42,10 +42,10 @@ This will be a comprehensive list of online tutorials that I have implemented. T
 
 - #### [Basic Motion Detection and Tracking](https://youtu.be/MkcUgPhOlP8?si=rN8VI8zjTM6MNI7h)
 
-- #### [Colour Detection](https://henrydangprg.com/2016/06/26/color-detection-in-python-with-opencv/)
+- #### [Colour Detection and Tracking](https://henrydangprg.com/2016/06/26/color-detection-in-python-with-opencv/)
 
 ### Not yet implemented <a name="chap1.10"></a>
-- #### [Basic Motion Detection and Tracking](https://pyimagesearch.com/2015/05/25/basic-motion-detection-and-tracking-with-python-and-opencv/)
+- #### [Motion Tracking](https://youtu.be/GgGro5IV-cs?si=a-ya6nUkvFystMwu)
 
 - #### [Real-Time Face Recognition](https://towardsdatascience.com/real-time-face-recognition-an-end-to-end-project-b738bb0f7348)
 
