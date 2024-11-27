@@ -45,7 +45,9 @@ This will be a comprehensive list of online tutorials that I have implemented. T
 - #### [Colour Detection and Tracking](https://henrydangprg.com/2016/06/26/color-detection-in-python-with-opencv/)
 
 ### Not yet implemented <a name="chap1.10"></a>
-- #### [Motion Tracking](https://youtu.be/GgGro5IV-cs?si=a-ya6nUkvFystMwu)
+- #### [YOLOv8: How to Train for Object Detection on a Custom Dataset](https://youtu.be/wuZtUMEiKWY?si=bYNF-BBgCqguxaqA)
+	- [Rock-Paper-Scissors Annotated Dataset](https://universe.roboflow.com/roboflow-58fyf/rock-paper-scissors-sxsw/dataset/14)
+	- [Evaluating Object Detection Models Using Mean Average Precision (mAP)](https://www.digitalocean.com/community/tutorials/mean-average-precision)
 
 - #### [Real-Time Face Recognition](https://towardsdatascience.com/real-time-face-recognition-an-end-to-end-project-b738bb0f7348)
 
