@@ -44,12 +44,13 @@ This will be a comprehensive list of online tutorials that I have implemented. T
 
 - #### [Colour Detection and Tracking](https://henrydangprg.com/2016/06/26/color-detection-in-python-with-opencv/)
 
-### Not yet implemented <a name="chap1.10"></a>
 - #### [YOLOv8: How to Train for Object Detection on a Custom Dataset](https://youtu.be/wuZtUMEiKWY?si=bYNF-BBgCqguxaqA)
 	- [Rock-Paper-Scissors Annotated Dataset](https://universe.roboflow.com/roboflow-58fyf/rock-paper-scissors-sxsw/dataset/14)
 	- [Evaluating Object Detection Models Using Mean Average Precision (mAP)](https://www.digitalocean.com/community/tutorials/mean-average-precision)
+	- [Model Prediction YOLO Documentation](https://docs.ultralytics.com/modes/predict/#working-with-results)
 
-- #### [Real-Time Face Recognition](https://towardsdatascience.com/real-time-face-recognition-an-end-to-end-project-b738bb0f7348)
+### Not yet implemented <a name="chap1.10"></a>
+- #### [Real-Time Face Recognition Using Pre-Trained Models](https://towardsdatascience.com/real-time-face-recognition-an-end-to-end-project-b738bb0f7348)
 
 - #### [Automatic Vision Object Tracking](https://medium.com/mjrobot-org/automatic-vision-object-tracking-2dc6b4acaff5)
 
@@ -71,6 +72,8 @@ This will be a comprehensive list of online tutorials that I have implemented. T
 
 ### Not yet implemented <a name="chap2.10"></a>
 - #### [rosbags-dataframe 0.10.0](https://pypi.org/project/rosbags-dataframe/)  OR [rosbag-to-dataframe 0.2.1](https://pypi.org/project/rosbag-to-dataframe/)
+
+- #### Maybe not possible - Simulation of robot in Gazebo with YOLOv4 on camera input to distinguish between objects [ YOLOv4 tiny-3l based Target Tracking for UAV on Gazebo SITL ]https://youtu.be/VslihHATv-8?si=C-2lCnfOipNm7djm
 
 ---
 
