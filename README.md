@@ -1,4 +1,4 @@
-# -----------------------------**Online Tutorials**---------------------------
+# -----------------**Online Tutorials**-----------------
 This will be a comprehensive list of online tutorials that I have implemented. The focus will be on machine learning, ROS1 and ROS2 tutorial/projects.
 
 ---
