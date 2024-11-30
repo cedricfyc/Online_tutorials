@@ -70,9 +70,10 @@ This will be a comprehensive list of online tutorials that I have implemented. T
 
 - #### [Rosbag to Dataframe Conversion](https://pypi.org/project/rosbag-to-dataframe/)
 
-### Not yet implemented <a name="chap2.10"></a>
-- #### [rosbags-dataframe 0.10.0](https://pypi.org/project/rosbags-dataframe/)  OR [rosbag-to-dataframe 0.2.1](https://pypi.org/project/rosbag-to-dataframe/)
+- #### [rosbags-dataframe 0.10.0](https://pypi.org/project/rosbags-dataframe/)
+	- Not implemented an easier alternative found not requiring python3.10: used default python3.8 to implement rosbag classification
 
+### Not yet implemented <a name="chap2.10"></a>
 - #### Maybe not possible - Simulation of robot in Gazebo with YOLOv4 on camera input to distinguish between objects [ YOLOv4 tiny-3l based Target Tracking for UAV on Gazebo SITL ]https://youtu.be/VslihHATv-8?si=C-2lCnfOipNm7djm
 
 ---
