@@ -3,9 +3,11 @@ import rosbag
 import matplotlib.pyplot as plt
 
 
-def new_start_end(rostime_list, vx, threshold=0.05):
+# function to get cut start and end times
+def new_start_end(rostime_list, vx, threshold=0.03):
+    # threshold (twist.twist.linear.x) adjustable
     ind_list = []
-    for ind, time in enumerate(rostime_list):
+    for ind in range(len(rostime_list) - 1):
         if (vx[ind] >= threshold):
                 ind_list.append(ind)
     
@@ -21,23 +23,26 @@ def new_start_end(rostime_list, vx, threshold=0.05):
     # rosbag filter works with to_sec() converted rostime objects only (tested)
 
     if (new_start - rostime_list[0].to_sec() > 10.0):
-        print('Start extended')
+        #print('Start extended')
         new_start = new_start - 10.0
     if (rostime_list[len(rostime_list) - 1].to_sec() - new_end > 10.0):
-        print('End extended')
+        #print('End extended')
         new_end = new_end + 10.0
+    elif (rostime_list[len(rostime_list) - 1].to_sec() - new_end <= 10.0):
+        new_end = rostime_list[len(rostime_list) - 1].to_sec()
 
-    new_duration = new_end- new_start
-    print('New duration: ' + str(new_duration) + ' s')
+    new_duration = new_end - new_start
+    print('New duration: ' + str(new_duration) + ' s\n')
     start_end = [new_start, new_end]
 
     return start_end
 
 
+# function to check which files to shorten
 def check_files_in_folder(folder_path, suffix='_shortened.bag'):
     if not os.path.isdir(folder_path):
-        print(f"The folder path '{folder_path}' is invalid.")
-        return []
+        print("The folder path {} is invalid.".format(folder_path))
+        return -1
     
     valid_files = []
     rosbag_list = []
@@ -46,6 +51,7 @@ def check_files_in_folder(folder_path, suffix='_shortened.bag'):
     for file_name in os.listdir(folder_path):
         # Ensures we are only checking files, not directories
         full_path = os.path.join(folder_path, file_name)
+        #print(full_path)
         if (os.path.isfile(full_path) and file_name.endswith(suffix)):
             valid_files.append(file_name)
     
@@ -56,15 +62,21 @@ def check_files_in_folder(folder_path, suffix='_shortened.bag'):
     for val in valid_files:
         for b in rosbag_list:
             if not (b.endswith(suffix)):
-                if not (b[0:-4] == val[0:-14]):
-                    #print(b[0:-4] + ' is already shortened. Skipped...')
+                if (b[0:-4] == val[0:-14]):
+                    print(b[0:-4] + ' is already shortened. Skipped...')
+                    break
+                else:
                     to_shorten.append(b)
-                #else:
                     #print(b[0:-4] + ' is not shortened yet. Will shorten...')
+
+    if (len(valid_files) == 0):
+        for bag in rosbag_list:
+            to_shorten.append(bag)
     return to_shorten
 
 
-def plot_bag(start, time_list, vx, rostime_list, threshold=0.05):
+# function to plot bag
+def plot_bag(start, time_list, vx, rostime_list, threshold=0.03):
     # determine new times for plot
     new_time_list = []
     new_vx = []
@@ -75,6 +87,7 @@ def plot_bag(start, time_list, vx, rostime_list, threshold=0.05):
             new_vx.append(vx[i])
 
 
+    # plotting bag to confirm good shortening
     plt.figure(figsize=(8, 6))
     plt.plot(time_list, vx, label="Unshortened")
     plt.plot(new_time_list, new_vx, label="Shortened")
@@ -85,7 +98,7 @@ def plot_bag(start, time_list, vx, rostime_list, threshold=0.05):
     plt.grid(True, linestyle='--', alpha=0.7)
     plt.show()
 
-
+# function to shorten bags from check_files_in folder() 
 def shorten():
     to_shorten_list = check_files_in_folder(os.getcwd())
 
@@ -113,21 +126,27 @@ def shorten():
             for rostime in rostime_list:
                 time_list.append(rostime.to_sec() - start)
 
-            print('Duration: ' + str(duration) + ' s')
+            print('Duration: ' + str(duration) + ' s\n')
 
             print('{0} will be shortened to {1}.'.format(bag_name, outbag_name))
             plot_bag(start,time_list, vx, rostime_list)
 
 
-            # ask based on plot whether to shorten
+            # ask confirmation before shortening
             
-            short = input('Proceed with shortening? Y/n')
+            short = input('Proceed with shortening? Y/n  ')
             if (short == 'Y' or short == 'y'):
                 start_end = new_start_end(rostime_list, vx)
+                # command line shortening
                 os.system('rosbag filter {0} {1} "t.secs >= {2} and t.secs <= {3}"'.format(bag_name, outbag_name, str(start_end[0]), str(start_end[1])))
 
-                delete = input('Delete original bag to free up space? Y/n')
+                delete = input('Delete original bag to free up space? Y/n  ')
                 if (delete == 'Y' or delete == 'y'):
                     os.remove(file)
+            
+            else:
+                print('Shortening cancelled.\n')
+                continue
+
 
 shorten()
