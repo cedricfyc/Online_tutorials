@@ -15,6 +15,11 @@ This will be a comprehensive list of online tutorials that I have implemented. T
 ## [3 ROS2 Projects](#chap3)
 - ### [3.1 Gazebo](#chap3.1)
 - ### [Not yet implemented](#chap3.10)
+## [4 MATLAB](#chap4)
+- ### [4.1 MATLAB Simulink](#chap4.1)
+- ### [Not yet implemented](#chap4.10)
+## [5 Creo PTC](#chap5)
+- ### [Not yet implemented](#chap5.1)
 
 ---
 
@@ -80,8 +85,10 @@ This will be a comprehensive list of online tutorials that I have implemented. T
 
 # 3 ROS2 Projects <a name="chap3"></a>
 ## 3.1 Gazebo <a name="chap3.1"></a>
+- #### [ROS2 for Beginners Level 2 - TF | URDF | RViz | Gazebo by Edouard Renard](https://www.udemy.com/course/ros2-tf-urdf-rviz-gazebo/)
+
 ### Not yet implemented <a name="chap3.10"></a>
-- #### [Gazebo: Model Editor Introduction](https://youtu.be/wRP8icmBzVk?si=JCURS0JoG002HICm)
+- #### [ROS2 Nav2 [Navigation 2 Stack] by Edouard Renard](https://www.udemy.com/course/ros2-nav2-stack/)
 
 - #### [Create a Hopper Robot in Gazebo Step by Step Part1](https://youtu.be/wgJG2Xp8FZA?si=9y4RtFJfK0heFvbX)
 
@@ -89,4 +96,21 @@ This will be a comprehensive list of online tutorials that I have implemented. T
 
 - #### [Object detection using Yolo3D with ROS2](https://youtu.be/KTCtTLwJXP0?si=QzklFDsKVJOLV7IA)
 
-- #### [Create a URDF with ROS2 1H Crash Course](https://youtu.be/dZ_CyyEvBE0?si=rVdwHXTOtYpBc10Z)
+---
+
+# 4 MATLAB Projects <a name="chap4"></a>
+## 4.1 MATLAB Simulink <a name="chap4.1"></a>
+- #### Uni CS2 Project - Ball on Beam + Control Model 
+
+### Not yet implemented <a name="chap4.10"></a>
+- #### [MATLAB/SIMULINK Bible | Go From Zero to Hero + ChatGPT! by Dr. Ryan Ahmed](https://www.udemy.com/course/5-days-of-matlab-simulink-simscape-new-2022/)
+
+- #### [5 Days of Matlab, Simulink & SimScape + ChatGPT by Dr. Ryan Ahmed](https://www.udemy.com/course/matlabsimulink-biblego-from-zero-to-hero/)
+
+---
+
+# 5 Creo PTC Projects <a name="chap5"></a>
+
+### Not yet implemented <a name="chap5.1"></a>
+- #### [PTC Creo Parametric-A Complete Beginner to Advanced Course](https://www.udemy.com/course/creo-with-chris/)
+

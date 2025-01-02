@@ -1,0 +1,119 @@
+<?xml version="1.0"?> <!--  Original urdf model -->
+<robot name="my_robot">
+
+<!-- Declaring material colours here -->
+	<material name="grey">
+		<color rgba="0.7 0.7 0.7 1" />
+	</material>
+	
+	<material name="green">
+		<color rgba="0 0.6 0 1" />
+	</material>
+	
+	<material name="white">
+		<color rgba="1 1 1 1" />
+	</material>
+
+<!-- virtual link declared -->
+<!-- Sets up robot on ground -->
+    <link name="base_footprint" />
+
+<!-- Initialising base here -->
+<!-- Origin refers to the centre of the geometry-->
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <box size="0.6 0.4 0.2" />
+            </geometry>
+            <origin xyz="0 0 0.1" rpy="0 0 0" />
+            <material name="green"/>
+        </visual>
+    </link>
+
+<!-- Initialising lidar here -->
+<!-- Needs to be a child link  -->
+<!-- A joint is needed between base and lidar.  -->
+    <link name="lidar_link">
+        <visual>
+            <geometry>
+                <cylinder radius="0.1" length="0.05" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <material name="white" />
+        </visual>
+    </link>
+
+<!-- Initialising wheels here -->
+<!-- rpy is calibrated in radians  -->
+    <link name="back_left_wheel_link">
+        <visual>
+            <geometry>
+                <cylinder radius="0.1" length="0.05" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="1.5708 0 0" />
+            <material name="grey" />
+        </visual>
+    </link>
+
+    <link name="back_right_wheel_link">
+        <visual>
+            <geometry>
+                <cylinder radius="0.1" length="0.05" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="1.5708 0 0" />
+            <material name="grey" />
+        </visual>
+    </link>
+
+<!-- Initialising castor wheel here -->
+    <link name="castor_wheel_link">
+        <visual>
+            <geometry>
+                <sphere radius="0.05"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <material name="grey" />
+        </visual>
+    </link>
+
+<!-- Joint declared here  -->
+<!-- Keep base_link constant and child links origins constant  -->
+<!-- Adjust the joint origin only  -->
+<!-- If not enough. then adjust child links origins -->
+    <joint name="base_joint" type="fixed">
+        <parent link="base_footprint" />
+        <child link="base_link" />
+        <origin xyz="0 0 0.1" rpy="0 0 0" />
+    </joint>
+
+    <joint name="base_lidar_joint" type="fixed">
+        <parent link="base_link" />
+        <child link="lidar_link" />
+        <origin xyz="0 0 0.225" rpy="0 0 0" />
+    </joint>
+
+    <joint name="base_back_left_wheel_joint" type="continuous">
+        <parent link="base_link" />
+        <child link="back_left_wheel_link" />
+        <origin xyz="-0.15 0.225 0" rpy="0 0 0" />
+
+        <!-- Declare rotation about given axis -->
+        <axis xyz="0 1 0" />
+    </joint>
+
+    <joint name="base_back_right_wheel_joint" type="continuous">
+        <parent link="base_link" />
+        <child link="back_right_wheel_link" />
+        <origin xyz="-0.15 -0.225 0" rpy="0 0 0" />
+
+        <!-- Declare rotation about given axis -->
+        <axis xyz="0 1 0" />
+    </joint>
+
+    <joint name="base_castor_wheel_joint" type="fixed">
+        <parent link="base_link" />
+        <child link="castor_wheel_link" />
+        <origin xyz="0.2 0 -0.05" rpy="0 0 0" />
+    </joint>
+
+</robot>
