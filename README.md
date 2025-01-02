@@ -20,6 +20,8 @@ This will be a comprehensive list of online tutorials that I have implemented. T
 - ### [Not yet implemented](#chap4.10)
 ## [5 Creo PTC](#chap5)
 - ### [Not yet implemented](#chap5.1)
+## [6 R Programming Language](#chap6)
+- ### [Not yet implemented](#chap6.1)
 
 ---
 
@@ -114,3 +116,10 @@ This will be a comprehensive list of online tutorials that I have implemented. T
 ### Not yet implemented <a name="chap5.1"></a>
 - #### [PTC Creo Parametric-A Complete Beginner to Advanced Course](https://www.udemy.com/course/creo-with-chris/)
 
+---
+
+# 6 R Programming Language <a name="chap6"></a>
+- #### [R Basics - R Programming Language Introduction](https://www.udemy.com/course/r-basics/)
+
+### Not yet implemented <a name="chap6.1"></a>
+- #### [R Programming Tutorial - Learn the Basics of Statistical Computing by freeCodeCamp](https://youtu.be/_V8eKsto3Ug?si=0WxPi1OKMSxUlwXS)
