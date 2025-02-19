@@ -17,7 +17,7 @@ This will be a comprehensive list of online tutorials that I have implemented. T
 - ### [Not yet implemented](#chap3.10)
 ## [4 MATLAB](#chap4)
 - ### [4.1 MATLAB Simulink](#chap4.1)
-- ### [4.1 MATLAB Simscape](#chap4.2)
+- ### [4.2 MATLAB Simscape](#chap4.2)
 - ### [Not yet implemented](#chap4.10)
 ## [5 Creo PTC](#chap5)
 - ### [Not yet implemented](#chap5.1)
