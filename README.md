@@ -4,7 +4,7 @@ This will be a comprehensive list of online tutorials that I have implemented. T
 ---
 
 # Table of Contents
-## [1 Machine Learning Projects ](#chap1)
+## [1 Machine Learning Projects](#chap1)
 - ### [1.1 Regression](#chap1.1)
 - ### [1.2 Classification](#chap1.2)
 - ### [1.3 Computer Vision](#chap1.3)
@@ -17,6 +17,7 @@ This will be a comprehensive list of online tutorials that I have implemented. T
 - ### [Not yet implemented](#chap3.10)
 ## [4 MATLAB](#chap4)
 - ### [4.1 MATLAB Simulink](#chap4.1)
+- ### [4.1 MATLAB Simscape](#chap4.2)
 - ### [Not yet implemented](#chap4.10)
 ## [5 Creo PTC](#chap5)
 - ### [Not yet implemented](#chap5.1)
@@ -104,10 +105,13 @@ This will be a comprehensive list of online tutorials that I have implemented. T
 ## 4.1 MATLAB Simulink <a name="chap4.1"></a>
 - #### Uni CS2 Project - Ball on Beam + Control Model 
 
-### Not yet implemented <a name="chap4.10"></a>
 - #### [MATLAB/SIMULINK Bible | Go From Zero to Hero + ChatGPT! by Dr. Ryan Ahmed](https://www.udemy.com/course/5-days-of-matlab-simulink-simscape-new-2022/)
 
+## 4.2 MATLAB Simscape <a name="chap4.2"></a>
+
 - #### [5 Days of Matlab, Simulink & SimScape + ChatGPT by Dr. Ryan Ahmed](https://www.udemy.com/course/matlabsimulink-biblego-from-zero-to-hero/)
+
+### Not yet implemented <a name="chap4.10"></a>
 
 ---
 
@@ -123,3 +127,9 @@ This will be a comprehensive list of online tutorials that I have implemented. T
 
 ### Not yet implemented <a name="chap6.1"></a>
 - #### [R Programming Tutorial - Learn the Basics of Statistical Computing by freeCodeCamp](https://youtu.be/_V8eKsto3Ug?si=0WxPi1OKMSxUlwXS)
+
+# 7 PLC Programing <a name="chap7"></a>
+- #### [PLC Programming - Basics of Simulation with CoDeSys](https://www.udemy.com/course/plc-programming-basics-of-simulation-with-codesys/)
+
+### Not yet implemented <a name="chap7.10"></a>
+- #### [PLC Programming - Structured Programming and Design Patterns](https://www.udemy.com/course/plc-programming-structured-programming-and-design-patterns/)
