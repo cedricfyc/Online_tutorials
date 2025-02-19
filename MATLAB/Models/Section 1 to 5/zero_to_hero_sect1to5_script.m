@@ -7,7 +7,13 @@ runtime = 30;                       % runtime in s
 sim('zero_to_hero_sect1to5.slx')
 
 figure(1)
-plot(ans.x)                         % assignment 3
+plot(x.Time, x.Data)                                       % assignment 3
+xlabel('Time/s')
+ylabel('x')
+title('x against Time')
 
 figure(2)
-plot(ans.spring_damper_x)           % assignment 4
+plot(spring_damper_x.time, spring_damper_x.data)           % assignment 4
+xlabel('Time/s')
+ylabel('Spring Displacement/m')
+title('Spring Displacement against Time')
