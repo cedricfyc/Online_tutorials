@@ -2,6 +2,9 @@
 /ROS1/rosbag_shortening/bags/
 /MATLAB/Simulink Bible Course Material/
 /MATLAB/slprj/
-/MATLAB/5 Days Matlab Simulink
-/MATLAB/5 Days Simulink&Simscape Course/slprj
 /MATLAB/Zero To Hero Course/slprj
+/MATLAB/5 Days Simulink&Simscape Course/Day 1/slprj
+/MATLAB/5 Days Simulink&Simscape Course/Day 2/slprj
+/MATLAB/5 Days Simulink&Simscape Course/Day 3/slprj
+/MATLAB/5 Days Simulink&Simscape Course/Day 4/slprj
+*.slxc
