@@ -1,5 +1,5 @@
 # MATLAB/SIMULINK Bible: Go From Zero to Hero + ChatGPT
-The Zero to Hero MATLAB course that I completed on Udemy contains the following:
+The Zero to Hero MATLAB course that I completed on Udemy contains the following sections:
 - ## Section 1-5
 	- Basic Simulink Differential Equations System
 	- Mass Spring Damper System
